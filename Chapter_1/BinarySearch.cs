@@ -1,6 +1,6 @@
 ﻿namespace Algorithms.Chapter_1
 {
-    internal class BinarySearch
+    public class BinarySearch
     {
         public static int? Search(int[] array, int value)
         {
