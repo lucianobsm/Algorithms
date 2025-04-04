@@ -2,9 +2,9 @@
 
 namespace Algorithms.Chapter_6
 {
-    public class BreadthFirstSearch
+    public class Dijkstra
     {
-        public static void FindMangoSellerInGraph()
+        public static bool FindMangoSellerInGraph()
         {
             var queueSearch = new Queue<string>();
             HashSet<string> verified = [];
@@ -22,7 +22,7 @@ namespace Algorithms.Chapter_6
                     if (IsSeller(name))
                     {
                         Console.WriteLine($"{name} is a mango seller");
-                        return;
+                        return true;
                     }
                     else
                     {
@@ -31,6 +31,7 @@ namespace Algorithms.Chapter_6
                     }
                 }
             }
+            return false;
         }
 
         public static void ShowGraph()
