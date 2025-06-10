@@ -2,12 +2,12 @@
 {
     public class BinarySearch
     {
-        public static int? Search(int[] array, int value)
+        public static int Search(int[] array, int value)
         {
             var start = 0;
             var end = array.Length - 1;
 
-            while (start < end)
+            while (start <= end)
             {
                 int middle = (start + end) / 2;
 
@@ -28,7 +28,7 @@
                 }
             }
 
-            return null;
+            return -1;
         }
     }
 }
