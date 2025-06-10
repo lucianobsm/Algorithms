@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-
-namespace Algorithms.Chapter_6
+﻿namespace Algorithms.Chapter_6
 {
-    public class Dijkstra
+    public class BreadthFirstSearch
     {
         public static bool FindMangoSellerInGraph()
         {
@@ -44,7 +42,7 @@ namespace Algorithms.Chapter_6
             }
         }
 
-        public static List<string> FindShortesPath(string origin, string destination)
+        public static List<string>? FindShortesPath(string origin, string destination)
         {
             var graph = CreateGraph();
             var verified = new HashSet<string>();
